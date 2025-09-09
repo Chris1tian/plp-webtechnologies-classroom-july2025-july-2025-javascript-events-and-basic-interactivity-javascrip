@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Web Page</h1>
+    <!-- Light/Dark Mode Toggle -->
+    <section>
+      <button id="toggle-mode" class="toggle-btn">Toggle Light/Dark Mode</button>
+    </section>
+
+    <!-- Counter Feature -->
+    <section class="counter-section">
+      <button id="decrement-btn">-</button>
+      <span id="counter-value" class="counter-value">0</span>
+      <button id="increment-btn">+</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>FAQ</h2>
+      <div>
+        <div class="faq-question">What is JavaScript?</div>
+        <div class="faq-answer">JavaScript is a programming language used to make web pages interactive.</div>
+      </div>
+      <div>
+        <div class="faq-question">How do I add interactivity?</div>
+        <div class="faq-answer">You can use event listeners and DOM manipulation in JavaScript.</div>
+      </div>
+      <div>
+        <div class="faq-question">How does form validation work?</div>
+        <div class="faq-answer">JavaScript checks user input and displays helpful messages before submitting.</div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Sign Up Form</h2>
+      <form id="signup-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" autocomplete="off">
+          <div class="error-message" id="name-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" autocomplete="off">
+          <div class="error-message" id="email-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" autocomplete="off">
+          <div class="error-message" id="password-error"></div>
+        </div>
+        <button type="submit">Sign Up</button>
+        <div class="success-message" id="form-success"></div>
+      </form>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
